@@ -1,0 +1,18 @@
+HealthNexus Recommendation Patient Report
+Date: 2026-04-08
+
+Patient Name: Kamla Devi
+Age: 74
+Gender: female
+Annual Income: 420000
+City: Guwahati
+State: Assam
+Marital Status: widowed
+Occupation Type: retired
+Dependents: 1
+Smoking Status: smoker
+Plan Type: floater
+
+Known Conditions: Asthma, Hypertension, Diabetes, Heart Disease, Thyroid Disorder, Obesity
+
+Clinical Summary: Multi-morbidity profile with ongoing specialist management.

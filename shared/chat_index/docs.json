@@ -1,0 +1,334 @@
+[
+  {
+    "id": "kb-basics",
+    "title": "Health Insurance Basics",
+    "url": "/resources/basics",
+    "text": "Health insurance is a contract between you and an insurance company where you pay regular premiums, and in return, the insurer covers your medical expenses. Key components include: Premium (the amount you pay monthly/annually), Sum Insured or Coverage Amount (maximum amount insurer will pay), Deductible (amount you pay before insurance kicks in), Co-payment (percentage of bill you pay), and Network Hospitals (hospitals with cashless facility). Health insurance protects you from financial burden during medical emergencies and provides access to quality healthcare.",
+    "metadata": {
+      "topics": [
+        "basics",
+        "coverage"
+      ],
+      "keywords": [
+        "health insurance",
+        "premium",
+        "sum insured",
+        "deductible",
+        "copay"
+      ],
+      "page_type": "knowledge_base",
+      "category": "basics"
+    }
+  },
+  {
+    "id": "kb-claims-cashless",
+    "title": "Cashless vs Reimbursement Claims",
+    "url": "/resources/claims",
+    "text": "There are two ways to file health insurance claims: Cashless and Reimbursement. Cashless: Available at network hospitals. Present your health card at admission. Hospital sends pre-authorization request to insurer. Upon approval, hospital bills insurer directly. You pay only non-covered expenses. Reimbursement: Available at any hospital. You pay the full bill upfront. Submit claim form with bills, discharge summary, prescriptions, and diagnostic reports within 15-30 days. Insurer reviews and reimburses approved amount to your bank account within 7-30 days. Cashless is convenient but limited to network hospitals. Reimbursement offers flexibility but requires upfront payment.",
+    "metadata": {
+      "topics": [
+        "claims",
+        "cashless",
+        "reimbursement"
+      ],
+      "keywords": [
+        "cashless claim",
+        "reimbursement",
+        "network hospital",
+        "claim process"
+      ],
+      "page_type": "knowledge_base",
+      "category": "claims"
+    }
+  },
+  {
+    "id": "kb-ped",
+    "title": "Pre-Existing Conditions and Waiting Periods",
+    "url": "/resources/pre-existing",
+    "text": "Pre-existing conditions (PEDs) are medical conditions you had before purchasing health insurance, such as diabetes, hypertension, asthma, thyroid disorders. Most insurance plans have a waiting period of 24-48 months before covering PEDs. During this period, any treatment related to pre-existing conditions won't be covered. Initial waiting period (30 days) applies to all new policies for any ailment except accidents. Specific disease waiting period (1-2 years) applies to conditions like hernia, cataract, sinusitis. You must disclose all pre-existing conditions during application. Non-disclosure can lead to claim rejection. Some insurers offer immediate PED coverage at higher premiums. After waiting period ends, PEDs are covered like any other illness.",
+    "metadata": {
+      "topics": [
+        "coverage",
+        "ped",
+        "waiting"
+      ],
+      "keywords": [
+        "pre-existing",
+        "waiting period",
+        "diabetes",
+        "hypertension",
+        "disclosure"
+      ],
+      "page_type": "knowledge_base",
+      "category": "coverage"
+    }
+  },
+  {
+    "id": "kb-tax-benefits",
+    "title": "Tax Benefits Under Section 80D",
+    "url": "/resources/tax-benefits",
+    "text": "Section 80D of Income Tax Act provides deductions on health insurance premiums. Deduction limits: \u20b925,000 for self, spouse, and dependent children. Additional \u20b925,000 for parents below 60 years. \u20b950,000 for parents above 60 years (senior citizens). Maximum total deduction: \u20b975,000 (\u20b925,000 + \u20b950,000). Premiums must be paid through non-cash modes (online, cheque, card). Preventive health check-ups up to \u20b95,000 included within the limit. Keep payment receipts and policy documents for tax filing. This significantly reduces your taxable income and provides dual benefit of health protection and tax savings.",
+    "metadata": {
+      "topics": [
+        "tax",
+        "benefits",
+        "savings"
+      ],
+      "keywords": [
+        "section 80D",
+        "tax deduction",
+        "tax benefits",
+        "savings"
+      ],
+      "page_type": "knowledge_base",
+      "category": "financial"
+    }
+  },
+  {
+    "id": "kb-premium-factors",
+    "title": "How Insurance Premiums are Calculated",
+    "url": "/resources/premiums",
+    "text": "Health insurance premiums depend on multiple factors: Age (older individuals pay higher premiums), Sum Insured (higher coverage = higher premium), Pre-existing conditions (add 15-40% loading), Lifestyle (smokers pay 20-50% more), BMI/Obesity (adds 10-20% loading), Family size (family floater plans offer discount), Geographic location (metro cities have higher premiums), Plan type (comprehensive plans cost more), Deductibles (higher deductible = lower premium), Co-payment (voluntarily opting for co-pay reduces premium). Base calculation: Premium per lakh of coverage \u00d7 Coverage in lakhs \u00d7 Age multiplier \u00d7 Condition loading. For example, a 35-year-old with 5 lakh coverage: \u20b9750 per lakh \u00d7 5 = \u20b93,750 base premium annually.",
+    "metadata": {
+      "topics": [
+        "premium",
+        "cost"
+      ],
+      "keywords": [
+        "premium calculation",
+        "cost factors",
+        "age",
+        "coverage amount"
+      ],
+      "page_type": "knowledge_base",
+      "category": "financial"
+    }
+  },
+  {
+    "id": "kb-network-hospitals",
+    "title": "Network Hospitals and Cashless Facilities",
+    "url": "/resources/network-hospitals",
+    "text": "Network hospitals are healthcare facilities that have agreements with insurance companies for cashless treatment. Benefits: No upfront payment needed, direct settlement between hospital and insurer, faster claim processing, standardized pricing. Top hospital chains in India: Apollo Hospitals (premium network, 70+ locations), Fortis Healthcare (comprehensive network), Max Healthcare (North India focus), Manipal Hospitals (South India strong), AIIMS (government, select plans), Narayana Health (value-focused). Check your insurer's hospital list on their website or app. List is updated regularly. Cashless facility requires: Valid health card, pre-authorization approval (for planned treatments), hospital being in-network at time of admission. In emergency, most insurers cover non-network hospitals but with reimbursement process.",
+    "metadata": {
+      "topics": [
+        "hospitals",
+        "cashless",
+        "network"
+      ],
+      "keywords": [
+        "network hospital",
+        "apollo",
+        "fortis",
+        "cashless facility"
+      ],
+      "page_type": "knowledge_base",
+      "category": "hospitals"
+    }
+  },
+  {
+    "id": "kb-exclusions",
+    "title": "Common Insurance Exclusions",
+    "url": "/resources/exclusions",
+    "text": "Health insurance doesn't cover everything. Common exclusions: Self-inflicted injuries and suicide attempts, injuries due to war or nuclear weapons, cosmetic/aesthetic treatments, infertility and assisted reproduction (IVF), gender change surgeries, experimental/unproven treatments, dental procedures (unless due to accident), LASIK/corrective eye surgeries, congenital disorders (conditions from birth), pre-existing conditions during waiting period, routine health check-ups, OPD expenses (unless added as rider), hazardous activities injuries (adventure sports), chronic conditions like HIV/AIDS (in some policies). Always read policy exclusions carefully before purchasing. Some exclusions can be covered through riders at additional cost.",
+    "metadata": {
+      "topics": [
+        "exclusions",
+        "coverage"
+      ],
+      "keywords": [
+        "exclusions",
+        "not covered",
+        "limitations"
+      ],
+      "page_type": "knowledge_base",
+      "category": "coverage"
+    }
+  },
+  {
+    "id": "kb-maternity",
+    "title": "Maternity Coverage in Health Insurance",
+    "url": "/resources/maternity",
+    "text": "Maternity coverage is not standard in all health insurance plans. Details: Waiting period: 9-36 months (typically 24 months), Normal delivery coverage: \u20b925,000 - \u20b950,000, C-section coverage: \u20b950,000 - \u20b91,00,000, Pre-natal and post-natal expenses covered, Newborn baby cover from day one (up to 90 days), Complications during pregnancy covered, Fertility treatments excluded. Family floater plans usually include maternity. Individual plans may require separate rider. Check sub-limits on maternity benefits. Some plans reduce waiting period for additional premium. Maternity expenses can be claimed under cashless or reimbursement mode.",
+    "metadata": {
+      "topics": [
+        "maternity",
+        "coverage"
+      ],
+      "keywords": [
+        "maternity",
+        "pregnancy",
+        "newborn",
+        "delivery"
+      ],
+      "page_type": "knowledge_base",
+      "category": "coverage"
+    }
+  },
+  {
+    "id": "kb-room-rent",
+    "title": "Room Rent Limits and Proportionate Deduction",
+    "url": "/resources/room-rent",
+    "text": "Room rent limits restrict the maximum daily room charge the insurer will pay. Types: Fixed limit (e.g., \u20b95,000 per day), Percentage of sum insured (e.g., 1% of sum insured), No room rent limit (best option). Proportionate deduction: If you choose a room more expensive than your limit, insurer applies proportionate deduction on ALL treatment costs, not just room rent. Example: Your limit is \u20b93,000/day but you take \u20b96,000/day room (2x limit). Surgery bill: \u20b93,00,000. Insurer pays only 50% = \u20b91,50,000. You pay remaining \u20b91,50,000. This applies to surgeon fees, medicines, consumables - everything. Solution: Choose plans with no room rent limit or high enough limits. If you need private room, check if your policy supports it to avoid proportionate deduction.",
+    "metadata": {
+      "topics": [
+        "room rent",
+        "limits",
+        "deduction"
+      ],
+      "keywords": [
+        "room rent",
+        "proportionate deduction",
+        "sub-limits"
+      ],
+      "page_type": "knowledge_base",
+      "category": "coverage"
+    }
+  },
+  {
+    "id": "kb-copay",
+    "title": "Co-payment in Health Insurance",
+    "url": "/resources/copayment",
+    "text": "Co-payment (co-pay) means you pay a fixed percentage of the claim amount, and insurer pays the rest. Common co-pay percentages: 10%, 20%, 30%. Mandatory co-pay: Applied to all claims (common for senior citizens, 20-30% co-pay). Voluntary co-pay: You opt for it to reduce premium by 10-30%. Example: Total bill \u20b91,00,000 with 20% co-pay. You pay \u20b920,000. Insurer pays \u20b980,000. Pros: Lower premiums, good for young/healthy individuals who rarely claim. Cons: High out-of-pocket expenses during hospitalization, affects savings in medical emergency. Consider your health status and financial capacity before opting for voluntary co-pay. For frequent medical needs, choose zero co-pay plans.",
+    "metadata": {
+      "topics": [
+        "copay",
+        "cost"
+      ],
+      "keywords": [
+        "co-payment",
+        "copay",
+        "percentage",
+        "out of pocket"
+      ],
+      "page_type": "knowledge_base",
+      "category": "financial"
+    }
+  },
+  {
+    "id": "kb-critical-illness",
+    "title": "Critical Illness Riders and Coverage",
+    "url": "/resources/critical-illness",
+    "text": "Critical illness rider provides lump sum payout on diagnosis of specified critical illnesses. Covered illnesses: Cancer, Heart attack, Kidney failure, Stroke, Major organ transplant, Coronary artery bypass surgery, Paralysis, Multiple sclerosis, Parkinson's disease, Coma. Features: Lump sum payment (\u20b95 lakhs to \u20b950 lakhs), Paid immediately on diagnosis (survival period 30 days required), Used for treatment, loss of income, lifestyle changes, Separate from hospitalization coverage. Not a replacement for regular health insurance. Cost: 5-15% of base premium. Survival period clause: You must survive 30 days post-diagnosis to receive payout. One-time benefit (once paid, rider ends). Recommended for individuals with family history of critical illnesses.",
+    "metadata": {
+      "topics": [
+        "riders",
+        "critical illness",
+        "coverage"
+      ],
+      "keywords": [
+        "critical illness",
+        "cancer",
+        "heart attack",
+        "lump sum"
+      ],
+      "page_type": "knowledge_base",
+      "category": "coverage"
+    }
+  },
+  {
+    "id": "kb-daycare",
+    "title": "Day Care Procedures and Coverage",
+    "url": "/resources/daycare",
+    "text": "Day care procedures are medical treatments requiring less than 24 hours hospitalization due to technological advancement. Common day care procedures covered: Cataract surgery, Dialysis, Chemotherapy, Radiotherapy, Lithotripsy (kidney stone removal), Tonsillectomy, Piles treatment, Laser surgeries, Dental surgery (accident-related), Eye surgeries (LASIK usually excluded). IRDAI mandates coverage of 150+ day care procedures. No hospitalization of 24 hours needed. Cashless facility available at network hospitals. Pre and post-procedure consultations covered. Important: Check your policy for specific list of covered day care procedures. Some older policies may have limited coverage.",
+    "metadata": {
+      "topics": [
+        "daycare",
+        "procedures",
+        "coverage"
+      ],
+      "keywords": [
+        "day care",
+        "cataract",
+        "dialysis",
+        "chemotherapy",
+        "procedures"
+      ],
+      "page_type": "knowledge_base",
+      "category": "coverage"
+    }
+  },
+  {
+    "id": "kb-portability",
+    "title": "Health Insurance Portability",
+    "url": "/resources/portability",
+    "text": "Health insurance portability allows you to switch from one insurer to another without losing benefits. Benefits: Retain accumulated waiting period credits, Retain no-claim bonus, Change to better plans/insurers, No fresh medical examination (in most cases). Process: Apply to new insurer at least 45 days before renewal, New insurer requests portability from old insurer, Old insurer must respond within 7 days, New insurer evaluates and accepts/rejects within 15 days, If approved, your benefits transfer to new policy. Waiting periods: Already completed waiting periods transfer to new policy, Pre-existing conditions covered immediately if waiting period completed with old insurer. Things to consider: Compare coverage carefully, Premium may increase/decrease, Some benefits may not transfer (loyalty benefits), Network hospitals may differ.",
+    "metadata": {
+      "topics": [
+        "portability",
+        "switching"
+      ],
+      "keywords": [
+        "portability",
+        "switch insurer",
+        "transfer policy",
+        "retention"
+      ],
+      "page_type": "knowledge_base",
+      "category": "basics"
+    }
+  },
+  {
+    "id": "kb-ncb",
+    "title": "No Claim Bonus (NCB) in Health Insurance",
+    "url": "/resources/ncb",
+    "text": "No Claim Bonus (NCB) is a reward for not making any claims during the policy year. How it works: Increase in sum insured without additional premium, OR reduction in renewal premium. Typical NCB structure: Year 1 (no claims): 5-10% increase in sum insured, Year 2 (no claims): Additional 10%, Year 3 and beyond: Up to 50% cumulative increase. Example: Initial sum insured \u20b95 lakhs. After 3 claim-free years with 50% NCB: Sum insured becomes \u20b97.5 lakhs at same premium. Benefits: Increased coverage over time, Protection against inflation in medical costs, Reward for maintaining good health. Loss of NCB: Making even one claim resets NCB to zero. Some insurers offer NCB protection rider - allows one claim without losing NCB. Super NCB: Advanced feature where NCB continues to accumulate even after a claim (limited plans).",
+    "metadata": {
+      "topics": [
+        "ncb",
+        "bonus",
+        "benefits"
+      ],
+      "keywords": [
+        "no claim bonus",
+        "NCB",
+        "bonus",
+        "reward"
+      ],
+      "page_type": "knowledge_base",
+      "category": "financial"
+    }
+  },
+  {
+    "id": "kb-claim-rejection",
+    "title": "Common Reasons for Claim Rejection",
+    "url": "/resources/rejection",
+    "text": "Health insurance claims can be rejected for various reasons: Non-disclosure: Not revealing pre-existing conditions during application (most common reason). Policy not in force: Premium not paid or policy lapsed. Treatment during waiting period: Claiming for conditions under waiting period. Exclusions: Treatment for specifically excluded conditions. Incomplete documentation: Missing bills, prescriptions, reports. Non-network hospital without intimation: Emergency should be informed within 24 hours. Cosmetic procedures: Treatments not medically necessary. Experimental treatments: Unproven or investigational procedures. Substances: Injuries due to alcohol, drugs. How to avoid rejection: Disclose all medical conditions honestly, Read policy terms thoroughly, Keep policy active by paying premiums on time, Submit complete documentation, Inform insurer about hospitalization within time limits, Choose treatments covered by policy.",
+    "metadata": {
+      "topics": [
+        "claims",
+        "rejection",
+        "denial"
+      ],
+      "keywords": [
+        "claim rejection",
+        "denial",
+        "reasons",
+        "non-disclosure"
+      ],
+      "page_type": "knowledge_base",
+      "category": "claims"
+    }
+  },
+  {
+    "id": "kb-opd",
+    "title": "OPD Coverage and Benefits",
+    "url": "/resources/opd",
+    "text": "OPD (Out-Patient Department) coverage includes medical expenses that don't require hospitalization. Standard health insurance excludes OPD. OPD rider adds coverage for: Doctor consultations, Diagnostic tests (blood tests, X-rays), Pharmacy bills for medicines, Preventive health check-ups, Dental check-ups, Eye examinations. Annual limit: \u20b95,000 to \u20b925,000. How it works: Sub-limit per consultation (\u20b9500-\u20b91,000), Sub-limit for diagnostics (\u20b93,000-\u20b95,000), Sub-limit for medicines (\u20b95,000-\u20b910,000), Preventive check-up (\u20b92,000-\u20b95,000 annually). Cost: 10-20% of base premium. Claim process: Collect bills, Submit claim form with bills, Reimbursement within 7-15 days. Worth it for: Families with children (frequent consultations), Chronic patients needing regular check-ups, Senior citizens. OPD coverage helps reduce out-of-pocket expenses for routine healthcare.",
+    "metadata": {
+      "topics": [
+        "opd",
+        "coverage",
+        "riders"
+      ],
+      "keywords": [
+        "OPD",
+        "outpatient",
+        "consultation",
+        "tests",
+        "rider"
+      ],
+      "page_type": "knowledge_base",
+      "category": "coverage"
+    }
+  }
+]

@@ -74,7 +74,9 @@ const SignupPage: React.FC = () => {
       }
     } catch (err: any) {
       setError(
-        err.response?.data?.message || "Registration failed. Please try again.",
+        err.response?.data?.error ||
+          err.response?.data?.message ||
+          "Registration failed. Please try again.",
       );
     } finally {
       setLoading(false);

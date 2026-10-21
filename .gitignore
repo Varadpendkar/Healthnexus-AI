@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+backend/venv/
+venv/
+.venv/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Databases & Runtime State
+*.db
+*.sqlite3
+instance/
+backend/instance/
+health_nexus.db
+
+# Logs & Temporary files
+*.log
+backend.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+frontend/build/
+dist/
+outputs/
+.cache/
+
+# Environment Variables & Secrets
+.env
+.env.local
+
+# macOS metadata
+.DS_Store
+._*

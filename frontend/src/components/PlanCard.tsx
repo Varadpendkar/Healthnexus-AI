@@ -14,8 +14,9 @@ import {
   CheckCircle,
   LocalHospital,
   AccountBalance,
-  TrendingUp,
   Star,
+  BookmarkBorder,
+  BookmarkAdded,
 } from "@mui/icons-material";
 import { PlanRecommendation } from "../types/insurance";
 
@@ -23,12 +24,18 @@ interface Props {
   plan: PlanRecommendation;
   onViewDetails?: (planId: string) => void;
   onCompare?: (planId: string) => void;
+  onSave?: (plan: PlanRecommendation) => void | Promise<void>;
+  isSaved?: boolean;
+  saveLoading?: boolean;
 }
 
 export const PlanCard: React.FC<Props> = ({
   plan,
   onViewDetails,
   onCompare,
+  onSave,
+  isSaved = false,
+  saveLoading = false,
 }) => {
   const isBestMatch = plan.rank === 1;
   const approvalRate = 100 - plan.claim_rejection_rate;
@@ -238,16 +245,32 @@ export const PlanCard: React.FC<Props> = ({
         )}
 
         {/* Action Buttons */}
-        <Stack direction="row" spacing={1}>
+        <Stack spacing={1}>
+          <Stack direction="row" spacing={1}>
+            <Button
+              variant="contained"
+              fullWidth
+              onClick={() => onViewDetails?.(plan.plan_id)}
+            >
+              View Details
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => onCompare?.(plan.plan_id)}
+            >
+              Compare
+            </Button>
+          </Stack>
+
           <Button
-            variant="contained"
+            variant={isSaved ? "contained" : "outlined"}
+            color={isSaved ? "success" : "secondary"}
             fullWidth
-            onClick={() => onViewDetails?.(plan.plan_id)}
+            disabled={isSaved || saveLoading || !onSave}
+            startIcon={isSaved ? <BookmarkAdded /> : <BookmarkBorder />}
+            onClick={() => onSave?.(plan)}
           >
-            View Details
-          </Button>
-          <Button variant="outlined" onClick={() => onCompare?.(plan.plan_id)}>
-            Compare
+            {isSaved ? "Saved" : saveLoading ? "Saving..." : "Save Plan"}
           </Button>
         </Stack>
       </CardContent>

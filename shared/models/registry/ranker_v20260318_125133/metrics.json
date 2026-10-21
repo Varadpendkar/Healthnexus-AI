@@ -1,0 +1,11 @@
+{
+  "num_eval_rows": 2021,
+  "num_users": 100,
+  "ndcg_at_5": 1.0,
+  "ndcg_at_10": 1.0,
+  "precision_at_5": 0.3400000000000001,
+  "precision_binary": 1.0,
+  "coverage_at_5": 0.24740227610094012,
+  "fairness_by_gender": {},
+  "fairness_by_region": {}
+}

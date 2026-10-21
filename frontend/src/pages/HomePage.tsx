@@ -19,6 +19,7 @@ import {
   ArrowForward,
 } from "@mui/icons-material";
 import Navigation from "../components/Navigation";
+import ChatbotWidget from "../components/ChatbotWidget";
 
 const features = [
   {
@@ -250,6 +251,9 @@ export const HomePage: React.FC = () => {
           </Typography>
         </Container>
       </Box>
+
+      {/* Chatbot Widget */}
+      <ChatbotWidget pageContext="home" />
     </Box>
   );
 };

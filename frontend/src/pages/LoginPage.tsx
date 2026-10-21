@@ -52,7 +52,8 @@ const LoginPage: React.FC = () => {
       }
     } catch (err: any) {
       setError(
-        err.response?.data?.message ||
+        err.response?.data?.error ||
+          err.response?.data?.message ||
           "Login failed. Please check your credentials.",
       );
     } finally {

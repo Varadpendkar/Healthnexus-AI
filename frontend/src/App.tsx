@@ -7,6 +7,11 @@ import { RecommendationsPage } from "./pages/RecommendationsPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import BillBusterPage from "./pages/BillBusterPage";
+import PlanDetailsPage from "./pages/PlanDetailsPage";
+import ComparePlansPage from "./pages/ComparePlansPage";
+import SavedPlansPage from "./pages/SavedPlansPage";
+import SmartPreAuthPage from "./pages/SmartPreAuthPage";
 import GlossaryPage from "./pages/resources/GlossaryPage";
 import ChooseHealthInsurancePage from "./pages/resources/ChooseHealthInsurancePage";
 import Top5MistakesPage from "./pages/resources/Top5MistakesPage";
@@ -43,6 +48,15 @@ const theme = createTheme({
   shape: {
     borderRadius: 12,
   },
+  components: {
+    MuiTextField: {
+      defaultProps: {
+        InputLabelProps: {
+          shrink: true,
+        },
+      },
+    },
+  },
 });
 
 function App() {
@@ -54,6 +68,11 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/get-quote" element={<GetQuotePage />} />
           <Route path="/recommendations" element={<RecommendationsPage />} />
+          <Route path="/plan/:planId" element={<PlanDetailsPage />} />
+          <Route path="/compare" element={<ComparePlansPage />} />
+          <Route path="/saved-plans" element={<SavedPlansPage />} />
+          <Route path="/bill-buster" element={<BillBusterPage />} />
+          <Route path="/smart-preauth" element={<SmartPreAuthPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/resources" element={<ResourcesPage />} />

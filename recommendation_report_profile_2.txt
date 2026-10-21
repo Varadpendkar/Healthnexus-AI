@@ -1,0 +1,20 @@
+HealthNexus Recommendation Patient Report
+Date: 2026-04-08
+
+Patient Name: Rajesh Verma
+Age: 44
+Gender: male
+Annual Income: 1450000
+City: Pune
+State: Maharashtra
+Marital Status: married
+Occupation Type: self employed
+Dependents: 2
+Smoking Status: yes
+Plan Type: floater
+
+Known Conditions: Diabetes, Hypertension
+No asthma.
+No known thyroid disorder.
+
+Clinical Summary: Type 2 diabetes and long-standing high blood pressure under treatment.

@@ -66,6 +66,11 @@ export interface ApiResponse {
   };
   total_plans_evaluated: number;
   ml_model_version?: string;
+  exploration?: {
+    enabled: boolean;
+    seed?: number | null;
+    temperature?: number | null;
+  };
 }
 
 export interface User {
@@ -89,4 +94,41 @@ export interface SavedPlan {
   premium: number;
   coverage_amount: number;
   saved_at: string;
+}
+
+export interface PatientConditions {
+  asthma: boolean;
+  hypertension: boolean;
+  diabetes: boolean;
+  heart_disease: boolean;
+  thyroid: boolean;
+  obesity: boolean;
+}
+
+export interface PatientReportProfile {
+  name: string | null;
+  age: number | null;
+  gender: "male" | "female" | "other" | null;
+  annual_income: number | null;
+  city: string | null;
+  state: string | null;
+  marital_status: "single" | "married" | "divorced" | "widowed" | null;
+  occupation_type: "salaried" | "self_employed" | "student" | "retired" | null;
+  dependents: number | null;
+  smoking_flag: boolean | null;
+  plan_type: "individual" | "floater" | null;
+  conditions: PatientConditions;
+}
+
+export interface PatientReportExtractionResponse {
+  success: boolean;
+  status: "success" | "error";
+  profile?: PatientReportProfile;
+  confidence?: Record<string, number>;
+  missing_fields?: string[];
+  raw_text_excerpt?: string;
+  ocr_confidence?: number;
+  extraction_source?: string;
+  llm_used?: boolean;
+  error?: string;
 }

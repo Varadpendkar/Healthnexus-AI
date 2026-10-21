@@ -1,0 +1,24 @@
+HealthNexus Recommendation Patient Report
+Date: 2026-04-08
+
+Patient Name: Aditi Rao
+Age: 27
+Gender: female
+Annual Income: 950000
+City: Bengaluru
+State: Karnataka
+Marital Status: single
+Occupation Type: salaried
+Dependents: 0
+Smoking Status: no
+Plan Type: individual
+
+Known Conditions: None
+No diabetes.
+No hypertension.
+No asthma.
+No heart disease.
+No thyroid disorder.
+No obesity.
+
+Clinical Summary: Routine annual health check with no chronic illness.

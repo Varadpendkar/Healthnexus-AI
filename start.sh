@@ -5,6 +5,8 @@ echo "🚀 Starting Healthnexus AI"
 echo "=========================================="
 echo ""
 
+export PATH="/usr/local/bin:/opt/homebrew/bin:/opt/anaconda3/bin:$PATH"
+
 # Check if virtual environment exists
 if [ ! -d "backend/venv" ]; then
     echo "📦 Creating Python virtual environment..."
@@ -20,10 +22,9 @@ fi
 
 # Start backend in background
 echo ""
-echo "🔧 Starting Flask backend on port 5000..."
+echo "🔧 Starting Flask backend on port 5001..."
 cd backend
-source venv/bin/activate
-python app.py &
+./venv/bin/python app.py &
 BACKEND_PID=$!
 cd ..
 
@@ -54,7 +55,7 @@ echo "=========================================="
 echo "✅ Healthnexus AI is running!"
 echo "=========================================="
 echo ""
-echo "📍 Backend API:  http://localhost:5000"
+echo "📍 Backend API:  http://localhost:5001"
 echo "📍 Frontend App: http://localhost:3000"
 echo ""
 echo "Press Ctrl+C to stop all servers"

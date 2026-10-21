@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
   Container,
@@ -9,12 +9,12 @@ import {
   Button,
   Chip,
   Alert,
-  Skeleton,
 } from "@mui/material";
 import { ArrowBack, Psychology, CheckCircle } from "@mui/icons-material";
 import { PlanCard } from "../components/PlanCard";
 import { ApiResponse } from "../types/insurance";
 import Navigation from "../components/Navigation";
+import { authAPI, insuranceAPI } from "../services/api";
 
 export const RecommendationsPage: React.FC = () => {
   const location = useLocation();
@@ -22,13 +22,44 @@ export const RecommendationsPage: React.FC = () => {
   const [selectedForComparison, setSelectedForComparison] = useState<string[]>(
     [],
   );
+  const [savedPlanIds, setSavedPlanIds] = useState<Set<string>>(new Set());
+  const [savingPlanIds, setSavingPlanIds] = useState<Set<string>>(new Set());
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const [saveSuccess, setSaveSuccess] = useState<string | null>(null);
 
   const state = location.state as {
     results: ApiResponse;
     userProfile: any;
   } | null;
 
-  if (!state || !state.results) {
+  const results = state?.results;
+  const recommendations = results?.recommendations || [];
+  const user_profile = results?.user_profile;
+  const total_plans_evaluated = results?.total_plans_evaluated || 0;
+
+  useEffect(() => {
+    let mounted = true;
+
+    const loadSaved = async () => {
+      if (!results) return;
+      if (!authAPI.isAuthenticated()) return;
+      try {
+        const savedPlans = await insuranceAPI.getSavedPlans();
+        if (!mounted) return;
+        setSavedPlanIds(new Set(savedPlans.map((p) => String(p.plan_id))));
+      } catch (e: any) {
+        if (!mounted) return;
+        setSaveError(e.message || "Could not load saved plans");
+      }
+    };
+
+    loadSaved();
+    return () => {
+      mounted = false;
+    };
+  }, [results]);
+
+  if (!state || !results) {
     return (
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Alert severity="error">
@@ -44,9 +75,6 @@ export const RecommendationsPage: React.FC = () => {
       </Container>
     );
   }
-
-  const { results, userProfile } = state;
-  const { recommendations, user_profile, total_plans_evaluated } = results;
 
   const handleCompare = (planId: string) => {
     setSelectedForComparison((prev) => {
@@ -65,6 +93,58 @@ export const RecommendationsPage: React.FC = () => {
     navigate(`/plan/${planId}`, {
       state: { plan: recommendations.find((p) => p.plan_id === planId) },
     });
+  };
+
+  const handleSavePlan = async (plan: any) => {
+    const planId = String(plan.plan_id);
+
+    if (!authAPI.isAuthenticated()) {
+      setSaveError("Please log in to save plans.");
+      navigate("/login");
+      return;
+    }
+
+    if (savedPlanIds.has(planId)) {
+      setSaveSuccess("Plan already saved.");
+      return;
+    }
+
+    setSaveError(null);
+    setSaveSuccess(null);
+    setSavingPlanIds((prev) => {
+      const next = new Set(prev);
+      next.add(planId);
+      return next;
+    });
+
+    try {
+      await insuranceAPI.savePlan({
+        plan_id: plan.plan_id,
+        plan_name: plan.plan_name,
+        provider: plan.provider,
+        premium: plan.premium,
+        coverage_amount: plan.coverage_amount,
+      });
+
+      setSavedPlanIds((prev) => {
+        const next = new Set(prev);
+        next.add(planId);
+        return next;
+      });
+      setSaveSuccess(`Saved: ${plan.plan_name}`);
+    } catch (e: any) {
+      const message = e.message || "Failed to save plan";
+      setSaveError(message);
+      if (message.toLowerCase().includes("log in")) {
+        navigate("/login");
+      }
+    } finally {
+      setSavingPlanIds((prev) => {
+        const next = new Set(prev);
+        next.delete(planId);
+        return next;
+      });
+    }
   };
 
   return (
@@ -140,6 +220,26 @@ export const RecommendationsPage: React.FC = () => {
           </Typography>
         </Box>
 
+        {saveError && (
+          <Alert
+            severity="warning"
+            sx={{ mb: 2 }}
+            onClose={() => setSaveError(null)}
+          >
+            {saveError}
+          </Alert>
+        )}
+
+        {saveSuccess && (
+          <Alert
+            severity="success"
+            sx={{ mb: 2 }}
+            onClose={() => setSaveSuccess(null)}
+          >
+            {saveSuccess}
+          </Alert>
+        )}
+
         {/* Comparison Bar */}
         {selectedForComparison.length > 0 && (
           <Paper
@@ -199,6 +299,9 @@ export const RecommendationsPage: React.FC = () => {
                 plan={plan}
                 onViewDetails={handleViewDetails}
                 onCompare={handleCompare}
+                onSave={handleSavePlan}
+                isSaved={savedPlanIds.has(String(plan.plan_id))}
+                saveLoading={savingPlanIds.has(String(plan.plan_id))}
               />
             </Grid>
           ))}

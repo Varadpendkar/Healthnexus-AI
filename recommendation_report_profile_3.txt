@@ -1,0 +1,22 @@
+HealthNexus Recommendation Patient Report
+Date: 2026-04-08
+
+Patient Name: Nisha Kapoor
+Age: 33
+Gender: female
+Annual Income: 620000
+City: Jaipur
+State: Rajasthan
+Marital Status: single
+Occupation Type: student
+Dependents: 1
+Smoking Status: non-smoker
+Plan Type: individual
+
+Known Conditions: Asthma, Thyroid
+No diabetes.
+No hypertension.
+No heart disease.
+No obesity.
+
+Clinical Summary: Intermittent asthma episodes and hypothyroid follow-up.

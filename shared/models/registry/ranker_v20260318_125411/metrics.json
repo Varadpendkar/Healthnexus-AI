@@ -1,0 +1,68 @@
+{
+  "num_eval_rows": 2021,
+  "num_users": 100,
+  "ndcg_at_5": 1.0,
+  "ndcg_at_10": 1.0,
+  "precision_at_5": 0.3400000000000001,
+  "precision_binary": 1.0,
+  "coverage_at_5": 0.24740227610094012,
+  "fairness_by_gender": {
+    "female": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.38235294117647056,
+      "coverage_at_5": 0.24079320113314448
+    },
+    "male": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.3125,
+      "coverage_at_5": 0.24806201550387597
+    },
+    "other": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.3235294117647059,
+      "coverage_at_5": 0.2537313432835821
+    }
+  },
+  "fairness_by_region": {
+    "Delhi": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.21428571428571433,
+      "coverage_at_5": 0.26217228464419473
+    },
+    "Gujarat": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.4,
+      "coverage_at_5": 0.24305555555555555
+    },
+    "Karnataka": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.2833333333333334,
+      "coverage_at_5": 0.24691358024691357
+    },
+    "Kerala": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.4181818181818182,
+      "coverage_at_5": 0.23504273504273504
+    },
+    "Maharashtra": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.4,
+      "coverage_at_5": 0.2559055118110236
+    },
+    "Rajasthan": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.3529411764705883,
+      "coverage_at_5": 0.24709302325581395
+    },
+    "Tamil Nadu": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.2833333333333333,
+      "coverage_at_5": 0.24489795918367346
+    },
+    "Uttar Pradesh": {
+      "ndcg_at_10": 1.0,
+      "precision_at_5": 0.4,
+      "coverage_at_5": 0.23972602739726026
+    }
+  }
+}
