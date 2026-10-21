@@ -8,7 +8,10 @@ import time
 import logging
 from pathlib import Path
 from typing import List, Dict, Any, Optional
-from sentence_transformers import SentenceTransformer
+try:
+    from sentence_transformers import SentenceTransformer
+except Exception as e:
+    SentenceTransformer = None
 import numpy as np
 import faiss
 
@@ -65,8 +68,16 @@ Keep tone professional, concise, and helpful. Never provide medical advice—onl
         self.index_file = self.index_dir / "faiss.index"
 
         # Initialize embedding model
-        logger.info(f"Loading embedding model: {embed_model}")
-        self.embed_model = SentenceTransformer(embed_model)
+        if SentenceTransformer is not None:
+            logger.info(f"Loading embedding model: {embed_model}")
+            try:
+                self.embed_model = SentenceTransformer(embed_model)
+            except Exception as e:
+                logger.warning(f"Failed to load embedding model: {e}")
+                self.embed_model = None
+        else:
+            logger.warning("SentenceTransformer is not installed/available")
+            self.embed_model = None
 
         # Load documents and index
         self.documents = []
