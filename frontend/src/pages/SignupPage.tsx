@@ -13,11 +13,9 @@ import {
   IconButton,
   Grid,
 } from "@mui/material";
-import {
-  Visibility,
-  VisibilityOff,
-  PersonAdd as SignupIcon,
-} from "@mui/icons-material";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import SignupIcon from "@mui/icons-material/PersonAdd";
 import { authAPI } from "../services/api";
 import Navigation from "../components/Navigation";
 

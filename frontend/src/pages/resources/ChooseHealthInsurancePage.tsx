@@ -11,7 +11,9 @@ import {
   ListItemText,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { ArrowBack, CheckCircle, PlayCircleOutline } from "@mui/icons-material";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import CheckCircle from "@mui/icons-material/CheckCircle";
+import PlayCircleOutline from "@mui/icons-material/PlayCircleOutline";
 import Navigation from "../../components/Navigation";
 
 const ChooseHealthInsurancePage: React.FC = () => {

@@ -10,14 +10,12 @@ import {
   LinearProgress,
   Stack,
 } from "@mui/material";
-import {
-  CheckCircle,
-  LocalHospital,
-  AccountBalance,
-  Star,
-  BookmarkBorder,
-  BookmarkAdded,
-} from "@mui/icons-material";
+import CheckCircle from "@mui/icons-material/CheckCircle";
+import LocalHospital from "@mui/icons-material/LocalHospital";
+import AccountBalance from "@mui/icons-material/AccountBalance";
+import Star from "@mui/icons-material/Star";
+import BookmarkBorder from "@mui/icons-material/BookmarkBorder";
+import BookmarkAdded from "@mui/icons-material/BookmarkAdded";
 import { PlanRecommendation } from "../types/insurance";
 
 interface Props {

@@ -76,4 +76,4 @@ echo ""
 
 # Start frontend (foreground so compilation logs and ready status are visible)
 cd frontend
-npm start
+BROWSER=none npm start

@@ -12,16 +12,14 @@ import {
   Chip,
 } from "@mui/material";
 import Navigation from "../components/Navigation";
-import {
-  MenuBook,
-  VideoLibrary,
-  Description,
-  GetApp,
-  School,
-  LocalHospital,
-  PlayCircleOutline,
-  ArrowForward,
-} from "@mui/icons-material";
+import MenuBook from "@mui/icons-material/MenuBook";
+import VideoLibrary from "@mui/icons-material/VideoLibrary";
+import Description from "@mui/icons-material/Description";
+import GetApp from "@mui/icons-material/GetApp";
+import School from "@mui/icons-material/School";
+import LocalHospital from "@mui/icons-material/LocalHospital";
+import PlayCircleOutline from "@mui/icons-material/PlayCircleOutline";
+import ArrowForward from "@mui/icons-material/ArrowForward";
 
 interface Resource {
   title: string;

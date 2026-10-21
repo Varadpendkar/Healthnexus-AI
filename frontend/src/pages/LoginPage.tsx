@@ -12,11 +12,9 @@ import {
   InputAdornment,
   IconButton,
 } from "@mui/material";
-import {
-  Visibility,
-  VisibilityOff,
-  Login as LoginIcon,
-} from "@mui/icons-material";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import LoginIcon from "@mui/icons-material/Login";
 import { authAPI } from "../services/api";
 import Navigation from "../components/Navigation";
 

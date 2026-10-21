@@ -8,7 +8,8 @@ import {
   Alert,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { ArrowBack, Warning } from "@mui/icons-material";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import Warning from "@mui/icons-material/Warning";
 import Navigation from "../../components/Navigation";
 
 const Top5MistakesPage: React.FC = () => {

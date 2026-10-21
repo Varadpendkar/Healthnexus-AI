@@ -22,13 +22,11 @@ import {
   Grid,
   Divider,
 } from "@mui/material";
-import {
-  CloudUpload as UploadIcon,
-  ExpandMore as ExpandMoreIcon,
-  CheckCircle as CheckIcon,
-  Warning as WarningIcon,
-  Receipt as ReceiptIcon,
-} from "@mui/icons-material";
+import UploadIcon from "@mui/icons-material/CloudUpload";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import CheckIcon from "@mui/icons-material/CheckCircle";
+import WarningIcon from "@mui/icons-material/Warning";
+import ReceiptIcon from "@mui/icons-material/Receipt";
 import axios from "axios";
 import Navigation from "../components/Navigation";
 import ChatbotWidget from "../components/ChatbotWidget";

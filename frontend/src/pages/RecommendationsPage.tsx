@@ -10,7 +10,9 @@ import {
   Chip,
   Alert,
 } from "@mui/material";
-import { ArrowBack, Psychology, CheckCircle } from "@mui/icons-material";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import Psychology from "@mui/icons-material/Psychology";
+import CheckCircle from "@mui/icons-material/CheckCircle";
 import { PlanCard } from "../components/PlanCard";
 import { ApiResponse } from "../types/insurance";
 import Navigation from "../components/Navigation";

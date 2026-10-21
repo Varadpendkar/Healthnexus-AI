@@ -14,12 +14,10 @@ import {
   TableRow,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import {
-  ArrowBack,
-  PlayCircleOutline,
-  CheckCircle,
-  Cancel,
-} from "@mui/icons-material";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import PlayCircleOutline from "@mui/icons-material/PlayCircleOutline";
+import CheckCircle from "@mui/icons-material/CheckCircle";
+import Cancel from "@mui/icons-material/Cancel";
 import Navigation from "../../components/Navigation";
 
 const TermVsWholeLifePage: React.FC = () => {

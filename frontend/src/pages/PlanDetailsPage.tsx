@@ -13,7 +13,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { ArrowBack } from "@mui/icons-material";
+import ArrowBack from "@mui/icons-material/ArrowBack";
 import Navigation from "../components/Navigation";
 import { insuranceAPI } from "../services/api";
 import { PlanRecommendation } from "../types/insurance";

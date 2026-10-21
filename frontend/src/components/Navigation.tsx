@@ -13,17 +13,15 @@ import {
   ListItemText,
   Divider,
 } from "@mui/material";
-import {
-  Login,
-  PersonAdd,
-  MenuBook,
-  Receipt,
-  Favorite,
-  LocalHospital,
-  Logout,
-  AutoAwesome,
-  ArrowDropDown,
-} from "@mui/icons-material";
+import Login from "@mui/icons-material/Login";
+import PersonAdd from "@mui/icons-material/PersonAdd";
+import MenuBook from "@mui/icons-material/MenuBook";
+import Receipt from "@mui/icons-material/Receipt";
+import Favorite from "@mui/icons-material/Favorite";
+import LocalHospital from "@mui/icons-material/LocalHospital";
+import Logout from "@mui/icons-material/Logout";
+import AutoAwesome from "@mui/icons-material/AutoAwesome";
+import ArrowDropDown from "@mui/icons-material/ArrowDropDown";
 import { authAPI } from "../services/api";
 
 const Navigation: React.FC = () => {

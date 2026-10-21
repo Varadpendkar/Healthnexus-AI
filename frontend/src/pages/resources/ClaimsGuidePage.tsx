@@ -12,7 +12,8 @@ import {
   Alert,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { ArrowBack, LocalHospital } from "@mui/icons-material";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import LocalHospital from "@mui/icons-material/LocalHospital";
 import Navigation from "../../components/Navigation";
 
 const ClaimsGuidePage: React.FC = () => {

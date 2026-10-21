@@ -8,7 +8,7 @@ import {
   Button,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { ArrowBack } from "@mui/icons-material";
+import ArrowBack from "@mui/icons-material/ArrowBack";
 import Navigation from "../../components/Navigation";
 
 const GlossaryPage: React.FC = () => {

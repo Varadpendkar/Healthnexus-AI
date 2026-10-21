@@ -13,7 +13,8 @@ import {
   TableRow,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { ArrowBack, Calculate } from "@mui/icons-material";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import Calculate from "@mui/icons-material/Calculate";
 import Navigation from "../../components/Navigation";
 
 const DeductiblesPage: React.FC = () => {

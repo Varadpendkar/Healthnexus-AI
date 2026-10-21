@@ -10,14 +10,12 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-import {
-  Psychology,
-  Speed,
-  Security,
-  TrendingUp,
-  LocalHospital,
-  ArrowForward,
-} from "@mui/icons-material";
+import Psychology from "@mui/icons-material/Psychology";
+import Speed from "@mui/icons-material/Speed";
+import Security from "@mui/icons-material/Security";
+import TrendingUp from "@mui/icons-material/TrendingUp";
+import LocalHospital from "@mui/icons-material/LocalHospital";
+import ArrowForward from "@mui/icons-material/ArrowForward";
 import Navigation from "../components/Navigation";
 import ChatbotWidget from "../components/ChatbotWidget";
 

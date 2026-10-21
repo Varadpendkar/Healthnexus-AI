@@ -14,14 +14,12 @@ import {
   Fade,
   Divider,
 } from "@mui/material";
-import {
-  Chat as ChatIcon,
-  Send as SendIcon,
-  Close as CloseIcon,
-  ThumbUp as ThumbUpIcon,
-  ThumbDown as ThumbDownIcon,
-  SmartToy as BotIcon,
-} from "@mui/icons-material";
+import ChatIcon from "@mui/icons-material/Chat";
+import SendIcon from "@mui/icons-material/Send";
+import CloseIcon from "@mui/icons-material/Close";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import ThumbDownIcon from "@mui/icons-material/ThumbDown";
+import BotIcon from "@mui/icons-material/SmartToy";
 import axios from "axios";
 
 interface Message {
